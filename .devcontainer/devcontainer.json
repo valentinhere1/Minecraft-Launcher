@@ -1,0 +1,12 @@
+{
+    "name": "Minecraft Launcher",
+    "image": "mcr.microsoft.com/devcontainers/java:11",  // Usa Java 11 para Minecraft
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscjava.vscode-java-pack"
+        ]
+      }
+    },
+    "postCreateCommand": "mvn clean install"  // Si usas Maven, puedes usar este comando para instalar dependencias después de crear el Codespace
+  }
